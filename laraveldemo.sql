@@ -11,8 +11,8 @@ CREATE TABLE `appointments` (
   `deleted_at` timestamp NULL DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
-  `date` date NOT NULL,
-  `time` time NOT NULL,
+  `date` date DEFAULT NULL,
+  `time` time DEFAULT NULL,
   `car_model` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
   `state` varchar(256) COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
   `city` varchar(256) COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
@@ -29,7 +29,31 @@ INSERT INTO `appointments` (`id`, `deleted_at`, `created_at`, `updated_at`, `dat
 (11,	NULL,	'2121-09-24 00:00:00',	'2121-09-24 00:00:00',	'2021-09-30',	'16:40:00',	'BMW 5 Series',	'Madhya Pradesh',	'Jabalpur',	'priya singh',	'priya@gmail.com'),
 (12,	NULL,	'2021-09-25 07:49:17',	'2021-09-25 07:49:17',	'2021-09-30',	'16:30:00',	'BMW 5 Series',	'Madhya Pradesh',	'Rewa',	'suraj singh',	'suraj@gmail.com'),
 (13,	NULL,	'2021-09-27 05:04:10',	'2021-09-27 05:04:10',	'2021-09-30',	'15:41:00',	'BMW 3 Series',	'Madhya Pradesh',	'Indore',	'rahul singh',	'rahul@gmail.com'),
-(14,	NULL,	'2021-09-27 09:27:24',	'2021-09-27 09:27:24',	'2021-09-23',	'16:57:00',	'BMW 3 Series',	'Madhya Pradesh',	'Indore',	'rahul singh',	'rahul@gmail.com');
+(14,	NULL,	'2021-09-27 09:27:24',	'2021-09-27 09:27:24',	'2021-09-23',	'16:57:00',	'BMW 3 Series',	'Madhya Pradesh',	'Indore',	'rahul singh',	'rahul@gmail.com'),
+(15,	NULL,	'2022-09-22 15:01:20',	'2022-09-22 15:01:20',	'2022-09-22',	'11:02:00',	'test',	'Kenmore',	'Lahar',	'jitedra  shing',	'jbodana87@gmail.com'),
+(16,	NULL,	'2022-09-22 15:01:34',	'2022-09-22 15:01:34',	'0000-00-00',	'00:00:00',	'',	'Kenmore',	'Lahar',	'jitedra  shing',	'jbodana87@gmail.com'),
+(17,	NULL,	'2022-09-22 15:01:56',	'2022-09-22 15:01:56',	'2022-08-31',	'22:11:00',	'test',	'Kerala',	'Maharajpur',	'jitedra  shing',	'jbodana87@gmail.com'),
+(18,	NULL,	'2022-09-22 15:02:22',	'2022-09-22 15:02:22',	'0000-00-00',	'00:00:00',	'',	'Select State',	'Select City',	'jitedra  shing',	'jbodana87@gmail.com'),
+(19,	NULL,	'2022-09-22 15:03:05',	'2022-09-22 15:03:05',	'0000-00-00',	'00:00:00',	'',	'Kerala',	'Kotma',	'jitedra  shing',	'jbodana87@gmail.com'),
+(20,	NULL,	'2022-09-22 15:22:49',	'2022-09-22 15:22:49',	'2022-08-31',	'22:11:00',	'test',	'Kenmore',	'Lahar',	'jitedra  shing',	'jbodana87@gmail.com'),
+(21,	NULL,	'2022-09-22 15:28:41',	'2022-09-22 15:28:41',	'0000-00-00',	'00:00:00',	'',	'Select State',	'Select City',	'jitedra  shing',	'jbodana87@gmail.com'),
+(22,	NULL,	'2022-09-22 15:28:53',	'2022-09-22 15:28:53',	'2022-09-03',	'11:01:00',	'test',	'Karnataka',	'Kotma',	'jitedra  shing',	'jbodana87@gmail.com'),
+(23,	NULL,	'2022-09-22 18:09:16',	'2022-09-22 18:09:16',	NULL,	NULL,	'test',	'Kerala',	'Katni',	'jitendra',	'jbodana87@gmail.com'),
+(24,	NULL,	'2022-09-23 02:57:38',	'2022-09-23 02:57:38',	NULL,	NULL,	'test',	'Kenmore',	'Lahar',	'dev',	'dewan@digiprima.com'),
+(25,	NULL,	'2022-09-23 03:02:24',	'2022-09-23 03:02:24',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(26,	NULL,	'2022-09-23 03:02:25',	'2022-09-23 03:02:25',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(27,	NULL,	'2022-09-23 03:02:31',	'2022-09-23 03:02:31',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(28,	NULL,	'2022-09-23 03:09:31',	'2022-09-23 03:09:31',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(29,	NULL,	'2022-09-23 03:13:48',	'2022-09-23 03:13:48',	NULL,	NULL,	'test',	'Lakshadweep',	'Lahar',	'jitendra',	'dewan@digiprima.com'),
+(30,	NULL,	'2022-09-23 03:18:02',	'2022-09-23 03:18:02',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(31,	NULL,	'2022-09-23 03:19:11',	'2022-09-23 03:19:11',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(32,	NULL,	'2022-09-23 05:00:15',	'2022-09-23 05:00:15',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(33,	NULL,	'2022-09-23 05:01:44',	'2022-09-23 05:01:44',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(34,	NULL,	'2022-09-23 05:05:36',	'2022-09-23 05:05:36',	NULL,	NULL,	'',	'Select State',	'Select City',	'',	''),
+(35,	NULL,	'2022-09-23 05:07:26',	'2022-09-23 05:07:26',	NULL,	NULL,	'test',	'Karnataka',	'Lahar',	'dev',	'jbodana87@gmail.com'),
+(36,	NULL,	'2022-09-23 05:12:10',	'2022-09-23 05:12:10',	NULL,	NULL,	'test',	'Kenmore',	'Kotma',	'jitendra',	'dewan@digiprima.com'),
+(37,	NULL,	'2022-09-23 05:14:16',	'2022-09-23 05:14:16',	NULL,	NULL,	'test',	'Kenmore',	'Kotma',	'jitendra',	'dewan@digiprima.com'),
+(38,	NULL,	'2022-09-23 05:14:58',	'2022-09-23 05:14:58',	NULL,	NULL,	'',	'Kenmore',	'Lahar',	'',	'');
 
 DROP TABLE IF EXISTS `backups`;
 CREATE TABLE `backups` (
@@ -1589,7 +1613,8 @@ INSERT INTO `employees` (`id`, `name`, `designation`, `gender`, `mobile`, `mobil
 (8,	'sohan singh',	'',	'male',	'8988233233',	'8988233233',	'sohan@gmail.com',	1,	'indore',	'sohan singh',	'sohan singh',	'2121-09-25',	'2121-09-25',	'2121-09-25',	35000.000,	'2022-06-13 11:55:39',	'2021-09-25 05:59:10',	'2022-06-13 11:55:39',	'123456'),
 (9,	'riya panday',	'',	'female',	'8988233233',	'8988233233',	'riya@gmail.com',	1,	'indore',	'riya panday',	'riya panday',	'2021-09-25',	'2021-09-25',	'2021-09-25',	35000.000,	'2022-06-13 11:55:37',	'2021-09-25 00:06:38',	'2022-06-13 11:55:37',	'123456'),
 (10,	'priya singh',	'',	'female',	'8988233233',	'8988233233',	'priya@gmail.com',	1,	'indore',	'priya singh',	'priya singh',	'2021-09-25',	'2021-09-25',	'2021-09-25',	35000.000,	'2022-06-13 11:55:34',	'2021-09-25 00:09:29',	'2022-06-13 11:55:34',	'123456'),
-(11,	'suraj singh',	'',	'female',	'8988233233',	'8988233233',	'suraj@gmail.com',	1,	'indore',	'suraj singh',	'suraj singh',	'2021-09-25',	'2021-09-25',	'2021-09-25',	35000.000,	'2022-06-13 11:55:27',	'2021-09-25 00:13:12',	'2022-06-13 11:55:27',	'123456');
+(11,	'suraj singh',	'',	'female',	'8988233233',	'8988233233',	'suraj@gmail.com',	1,	'indore',	'suraj singh',	'suraj singh',	'2021-09-25',	'2021-09-25',	'2021-09-25',	35000.000,	'2022-06-13 11:55:27',	'2021-09-25 00:13:12',	'2022-06-13 11:55:27',	'123456'),
+(12,	'jitedra  shing',	'',	'male',	'9090909090',	'9090909090',	'jbodana87@gmail.com',	1,	'indore',	'jitedra  shing',	'jitedra  shing',	'2022-09-22',	'2022-09-22',	'2022-09-22',	35000.000,	NULL,	'2022-09-22 09:30:05',	'2022-09-22 09:30:05',	'123456');
 
 SET NAMES utf8mb4;
 
@@ -1654,7 +1679,10 @@ INSERT INTO `la_menus` (`id`, `name`, `url`, `icon`, `type`, `parent`, `hierarch
 (5,	'Employees',	'employees',	'fa-group',	'module',	0,	2,	'2021-09-22 12:37:10',	'2022-06-13 12:09:57'),
 (6,	'Roles',	'roles',	'fa-user-plus',	'module',	1,	2,	'2021-09-22 12:37:10',	'2022-06-13 12:09:57'),
 (8,	'Permissions',	'permissions',	'fa-magic',	'module',	1,	3,	'2021-09-22 12:37:10',	'2022-06-13 12:09:57'),
-(12,	'Company',	'departments',	'fa-cube',	'custom',	0,	0,	'2022-06-13 12:12:35',	'2022-06-13 12:13:08');
+(12,	'Company',	'departments',	'fa-cube',	'custom',	0,	0,	'2022-06-13 12:12:35',	'2022-06-13 12:13:08'),
+(13,	'Order',	'order',	'fa-cube',	'module',	0,	0,	NULL,	NULL),
+(14,	'Orders',	'orders',	'fa fa-cube',	'module',	0,	0,	'2022-09-24 09:04:30',	'2022-09-24 09:04:30'),
+(15,	'Payments',	'payments',	'fa fa-cube',	'module',	0,	0,	'2022-09-24 09:17:10',	'2022-09-24 09:17:10');
 
 DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE `migrations` (
@@ -1808,7 +1836,20 @@ INSERT INTO `module_fields` (`id`, `colname`, `label`, `module`, `field_type`, `
 (63,	'state_id',	'state_id',	10,	22,	0,	'',	0,	256,	0,	'',	0,	'2021-09-24 13:02:19',	'2021-09-24 13:02:19'),
 (64,	'password',	'password',	4,	22,	0,	'null',	0,	256,	0,	'',	0,	'2021-09-25 00:24:33',	'2021-09-25 00:24:33'),
 (65,	'name',	'name',	9,	22,	0,	'null',	0,	256,	0,	'',	0,	'2021-09-25 02:11:52',	'2021-09-25 02:11:52'),
-(66,	'email',	'email',	9,	22,	0,	'null',	0,	256,	0,	'',	0,	'2021-09-25 02:12:14',	'2021-09-25 02:12:14');
+(66,	'email',	'email',	9,	22,	0,	'null',	0,	256,	0,	'',	0,	'2021-09-25 02:12:14',	'2021-09-25 02:12:14'),
+(68,	'name',	'Name',	14,	16,	0,	'',	220,	240,	1,	'',	0,	'2022-09-24 08:59:43',	'2022-09-24 09:01:20'),
+(69,	'email',	'Email',	14,	8,	0,	'',	200,	240,	1,	'',	0,	'2022-09-24 09:00:18',	'2022-09-24 09:00:18'),
+(70,	'pickup',	'Pick_up',	14,	16,	0,	'',	300,	400,	1,	'',	0,	'2022-09-24 09:01:06',	'2022-09-24 09:01:06'),
+(71,	'dropup',	'Drop_up',	14,	16,	0,	'',	100,	300,	1,	'',	0,	'2022-09-24 09:01:57',	'2022-09-24 09:01:57'),
+(72,	'price',	'Price',	14,	3,	0,	'',	100,	100,	1,	'',	0,	'2022-09-24 09:02:27',	'2022-09-24 09:02:27'),
+(73,	'distance',	'Distance',	14,	16,	0,	'',	100,	100,	1,	'',	0,	'2022-09-24 09:03:14',	'2022-09-24 09:03:14'),
+(74,	'create_date',	'Create_date',	14,	4,	0,	'',	0,	0,	0,	'',	0,	'2022-09-24 09:04:01',	'2022-09-24 09:04:01'),
+(75,	'order',	'Order',	14,	16,	0,	'',	222,	333,	1,	'',	0,	'2022-09-24 09:08:22',	'2022-09-24 09:08:22'),
+(76,	'card',	'Card',	15,	13,	0,	'',	14,	16,	1,	'',	0,	'2022-09-24 09:14:55',	'2022-09-24 09:14:55'),
+(77,	'cv',	'Cv',	15,	13,	0,	'',	3,	5,	1,	'',	0,	'2022-09-24 09:15:33',	'2022-09-24 09:15:33'),
+(78,	'order',	'Order',	15,	16,	0,	'',	1,	222,	1,	'',	0,	'2022-09-24 09:16:04',	'2022-09-25 01:28:38'),
+(79,	'pay',	'Order Pay',	15,	13,	0,	'',	1,	111,	1,	'',	0,	'2022-09-24 09:17:04',	'2022-09-25 01:29:21'),
+(80,	'create_date',	'Create_date',	15,	4,	0,	'',	0,	0,	0,	'',	0,	'2022-09-24 09:21:49',	'2022-09-24 09:21:49');
 
 DROP TABLE IF EXISTS `modules`;
 CREATE TABLE `modules` (
@@ -1837,7 +1878,35 @@ INSERT INTO `modules` (`id`, `name`, `label`, `name_db`, `view_col`, `model`, `c
 (8,	'Permissions',	'Permissions',	'permissions',	'name',	'Permission',	'PermissionsController',	'fa-magic',	1,	'2021-09-22 12:37:09',	'2021-09-22 12:37:10'),
 (9,	'Appointments',	'Appointments',	'appointments',	'city',	'Appointment',	'AppointmentsController',	'fa-calendar',	1,	'2021-09-22 12:55:15',	'2021-09-22 13:00:14'),
 (10,	'Cities',	'Cities',	'cities',	'pablish',	'City',	'CitiesController',	'fa-cube',	1,	'2021-09-24 12:23:33',	'2021-09-24 12:25:23'),
-(11,	'States',	'States',	'states',	'publish',	'State',	'StatesController',	'fa-cube',	1,	'2021-09-24 12:27:15',	'2021-09-24 12:28:26');
+(11,	'States',	'States',	'states',	'publish',	'State',	'StatesController',	'fa-cube',	1,	'2021-09-24 12:27:15',	'2021-09-24 12:28:26'),
+(12,	'Order',	'Order',	'order',	'name',	'order',	'OrderController',	'fa-cube',	1,	NULL,	NULL),
+(14,	'Orders',	'Orders',	'orders',	'name',	'Order',	'OrdersController',	'fa-cube',	1,	'2022-09-24 08:55:13',	'2022-09-24 09:04:30'),
+(15,	'Payments',	'Payments',	'payments',	'card',	'Payment',	'PaymentsController',	'fa-cube',	1,	'2022-09-24 09:13:37',	'2022-09-24 09:17:10');
+
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `name` varchar(240) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `email` varchar(240) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `pickup` varchar(400) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `dropup` varchar(300) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `price` double(15,2) NOT NULL DEFAULT '0.00',
+  `distance` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `create_date` date NOT NULL,
+  `order` varchar(333) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `orders` (`id`, `deleted_at`, `created_at`, `updated_at`, `name`, `email`, `pickup`, `dropup`, `price`, `distance`, `create_date`, `order`) VALUES
+(1,	NULL,	NULL,	NULL,	'jitendra',	'dewan@digiprima.com',	'Kotma',	'Indore',	3905.00,	'781 km',	'2022-09-24',	'dfaf'),
+(2,	NULL,	NULL,	NULL,	'jitendra',	'jbodana@gmail.com',	'Bhopal',	'Indore',	965.00,	'193 km',	'2022-09-24',	'partial'),
+(3,	'2022-09-24 09:34:01',	NULL,	'2022-09-24 09:34:01',	'jitendra',	'jbodana@gmail.com',	'Bhopal',	'Indore',	965.00,	'193 km',	'2022-09-24',	'partial'),
+(4,	NULL,	NULL,	NULL,	'test',	'dev@gmail.com',	'Indore',	'Dewas',	204.00,	'40.8 km',	'2022-09-25',	'partial'),
+(5,	NULL,	NULL,	NULL,	'test',	'dev@gmail.com',	'Indore',	'Dewas',	204.00,	'40.8 km',	'2022-09-25',	'partial'),
+(6,	NULL,	NULL,	NULL,	'ramesh chandra',	'ramesh@gmail.com',	'Dhar',	'Indore',	317.50,	'63.5 km',	'2022-09-25',	'amozon');
 
 DROP TABLE IF EXISTS `organizations`;
 CREATE TABLE `organizations` (
@@ -1873,6 +1942,77 @@ CREATE TABLE `password_resets` (
   KEY `password_resets_token_index` (`token`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 
+
+DROP TABLE IF EXISTS `payment`;
+CREATE TABLE `payment` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `card` int NOT NULL,
+  `cv` int NOT NULL,
+  `order` varchar(222) NOT NULL,
+  `pay` varchar(222) NOT NULL,
+  `create_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `payment` (`id`, `card`, `cv`, `order`, `pay`, `create_date`) VALUES
+(1,	0,	0,	'',	'2980',	'2022-09-24'),
+(2,	424424424,	434,	'fsfsf',	'2980',	'2022-09-24'),
+(3,	0,	0,	'',	'2980',	'2022-09-24'),
+(4,	2147483647,	344,	'hh',	'2980',	'2022-09-24'),
+(5,	0,	0,	'',	'2980',	'2022-09-24'),
+(6,	0,	0,	'',	'2980',	'2022-09-24'),
+(7,	0,	0,	'',	'2980',	'2022-09-24'),
+(8,	0,	0,	'',	'2980',	'2022-09-24'),
+(9,	2147483647,	434,	'hh',	'2910',	'2022-09-24'),
+(10,	2147483647,	434,	'hh',	'2910',	'2022-09-24');
+
+DROP TABLE IF EXISTS `payments`;
+CREATE TABLE `payments` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `card` int unsigned NOT NULL DEFAULT '0',
+  `cv` int unsigned NOT NULL DEFAULT '0',
+  `order` varchar(222) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `pay` int unsigned NOT NULL DEFAULT '0',
+  `create_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `payments` (`id`, `deleted_at`, `created_at`, `updated_at`, `card`, `cv`, `order`, `pay`, `create_date`) VALUES
+(1,	NULL,	NULL,	NULL,	4294967295,	434,	'place',	3905,	'2022-09-24'),
+(2,	'2022-09-25 00:57:07',	NULL,	'2022-09-25 00:57:07',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(3,	'2022-09-25 00:57:13',	NULL,	'2022-09-25 00:57:13',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(4,	'2022-09-25 00:57:23',	NULL,	'2022-09-25 00:57:23',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(5,	'2022-09-25 00:57:16',	NULL,	'2022-09-25 00:57:16',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(6,	'2022-09-25 00:57:17',	NULL,	'2022-09-25 00:57:17',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(7,	'2022-09-25 00:57:18',	NULL,	'2022-09-25 00:57:18',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(8,	'2022-09-25 00:57:21',	NULL,	'2022-09-25 00:57:21',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(9,	'2022-09-25 00:57:24',	NULL,	'2022-09-25 00:57:24',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(10,	'2022-09-25 00:57:26',	NULL,	'2022-09-25 00:57:26',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(11,	'2022-09-25 00:57:27',	NULL,	'2022-09-25 00:57:27',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(12,	'2022-09-25 00:57:31',	NULL,	'2022-09-25 00:57:31',	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(13,	NULL,	NULL,	NULL,	4294967295,	344,	'partial',	965,	'2022-09-24'),
+(14,	'2022-09-25 01:15:50',	NULL,	'2022-09-25 01:15:50',	4294967295,	434,	'partial',	204,	'2022-09-25'),
+(15,	'2022-09-25 01:15:47',	NULL,	'2022-09-25 01:15:47',	4294967295,	434,	'partial',	204,	'2022-09-25'),
+(16,	'2022-09-25 01:15:42',	NULL,	'2022-09-25 01:15:42',	4294967295,	434,	'partial',	204,	'2022-09-25'),
+(17,	'2022-09-25 01:15:45',	NULL,	'2022-09-25 01:15:45',	4294967295,	434,	'partial',	204,	'2022-09-25'),
+(18,	NULL,	NULL,	NULL,	4294967295,	434,	'partial',	204,	'2022-09-25'),
+(19,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(20,	NULL,	'2022-09-25 01:30:00',	'2022-09-25 01:30:00',	4294967295,	536,	'boi',	123,	'2022-09-25'),
+(21,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(22,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(23,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(24,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(25,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(26,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(27,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(28,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(29,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(30,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(31,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25'),
+(32,	NULL,	NULL,	NULL,	4294967295,	536,	'amozon',	318,	'2022-09-25');
 
 DROP TABLE IF EXISTS `permission_role`;
 CREATE TABLE `permission_role` (
@@ -1932,7 +2072,9 @@ INSERT INTO `role_module` (`id`, `role_id`, `module_id`, `acc_view`, `acc_create
 (8,	1,	8,	1,	1,	1,	1,	'2021-09-22 12:37:10',	'2021-09-22 12:37:10'),
 (9,	1,	9,	1,	1,	1,	1,	'2021-09-22 13:00:14',	'2021-09-22 13:00:14'),
 (10,	1,	10,	1,	1,	1,	1,	'2021-09-24 12:25:23',	'2021-09-24 12:25:23'),
-(11,	1,	11,	1,	1,	1,	1,	'2021-09-24 12:28:26',	'2021-09-24 12:28:26');
+(11,	1,	11,	1,	1,	1,	1,	'2021-09-24 12:28:26',	'2021-09-24 12:28:26'),
+(13,	1,	14,	1,	1,	1,	1,	'2022-09-24 09:04:30',	'2022-09-24 09:04:30'),
+(14,	1,	15,	1,	1,	1,	1,	'2022-09-24 09:17:10',	'2022-09-24 09:17:10');
 
 DROP TABLE IF EXISTS `role_module_fields`;
 CREATE TABLE `role_module_fields` (
@@ -2014,7 +2156,20 @@ INSERT INTO `role_module_fields` (`id`, `role_id`, `field_id`, `access`, `create
 (63,	1,	63,	'write',	'2021-09-24 13:02:19',	'2021-09-24 13:02:19'),
 (64,	1,	64,	'write',	'2021-09-25 00:24:33',	'2021-09-25 00:24:33'),
 (65,	1,	65,	'write',	'2021-09-25 02:11:52',	'2021-09-25 02:11:52'),
-(66,	1,	66,	'write',	'2021-09-25 02:12:15',	'2021-09-25 02:12:15');
+(66,	1,	66,	'write',	'2021-09-25 02:12:15',	'2021-09-25 02:12:15'),
+(68,	1,	68,	'write',	'2022-09-24 08:59:43',	'2022-09-24 08:59:43'),
+(69,	1,	69,	'write',	'2022-09-24 09:00:18',	'2022-09-24 09:00:18'),
+(70,	1,	70,	'write',	'2022-09-24 09:01:06',	'2022-09-24 09:01:06'),
+(71,	1,	71,	'write',	'2022-09-24 09:01:57',	'2022-09-24 09:01:57'),
+(72,	1,	72,	'write',	'2022-09-24 09:02:27',	'2022-09-24 09:02:27'),
+(73,	1,	73,	'write',	'2022-09-24 09:03:14',	'2022-09-24 09:03:14'),
+(74,	1,	74,	'write',	'2022-09-24 09:04:01',	'2022-09-24 09:04:01'),
+(75,	1,	75,	'write',	'2022-09-24 09:08:22',	'2022-09-24 09:08:22'),
+(76,	1,	76,	'write',	'2022-09-24 09:14:55',	'2022-09-24 09:14:55'),
+(77,	1,	77,	'write',	'2022-09-24 09:15:33',	'2022-09-24 09:15:33'),
+(78,	1,	78,	'write',	'2022-09-24 09:16:04',	'2022-09-24 09:16:04'),
+(79,	1,	79,	'write',	'2022-09-24 09:17:04',	'2022-09-24 09:17:04'),
+(80,	1,	80,	'write',	'2022-09-24 09:21:49',	'2022-09-24 09:21:49');
 
 DROP TABLE IF EXISTS `role_user`;
 CREATE TABLE `role_user` (
@@ -6223,6 +6378,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `users` (`id`, `name`, `context_id`, `email`, `password`, `type`, `remember_token`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(1,	'admin',	1,	'admin@admin.com',	'$2y$10$/ecSdRDd3uyTXodELgqkie2ZfesCEqQM3kvsNYZ6bMq7Xs2VOqPie',	'Employee',	'Ev9g4NU3dYKhO6ALK6hfbXych3yTybiC5ntjN8F3fXYnjdm0rtZo4ugjzbHQ',	NULL,	'2021-09-22 12:38:12',	'2022-06-13 12:31:02');
+(1,	'admin',	1,	'admin@admin.com',	'$2y$10$XCJz.sf/wBbS/DDj1eXb8eIh706HQ3G.nbnkAxzOMX1Gs8RALfKYi',	'Employee',	'Ev9g4NU3dYKhO6ALK6hfbXych3yTybiC5ntjN8F3fXYnjdm0rtZo4ugjzbHQ',	NULL,	'2021-09-22 12:38:12',	'2022-06-13 12:31:02'),
+(8,	'jitedra  shing',	12,	'jbodana87@gmail.com',	'$2y$10$XCJz.sf/wBbS/DDj1eXb8eIh706HQ3G.nbnkAxzOMX1Gs8RALfKYi',	'Employee',	NULL,	NULL,	'2022-09-22 09:30:05',	'2022-09-22 09:30:05');
 
--- 2022-06-13 18:17:24
+-- 2022-09-25 09:11:35
